@@ -1,0 +1,88 @@
+<head>
+    <style>
+        form{
+            font-size: 40px;
+        }
+        .pad{
+            padding-left: 500px;
+            padding-top: 400px;
+        }
+        body{
+            background-image:url('woods.webp')
+    }
+    h1{
+        font-size: 40px;
+        color:whitesmoke;
+    }
+    p{
+        font-size: 20px;
+        color: whitesmoke;
+    }
+    .box{
+        padding-top: 0cqb;
+        padding-left: 30px;
+        overflow: visible;
+        background-color: darkolivegreen;
+    }
+        .container{
+         display: grid;
+         align-items: center;
+         grid-template-columns: 1fr 1fr 1fr;
+         column-gap: 5px;   
+        }
+        .navbar{
+            padding-top: 0cqb;
+            padding:12px;
+            overflow:visible;
+            background-color:blanchedalmond;
+        }
+        .navbar a{
+            color: black;
+            text-align:center;
+            padding: 14px 16px;
+            font-size:20px;
+            text-shadow: 5px 5px 10px red;
+        }
+        .navbar a:hover{
+            text-size-adjust: 350px;
+            background-color:black;
+            color:aqua;
+            overflow: visible;
+        }
+        .navbar a:active{
+            background-color: beige;
+            color: white;
+        }
+        input{
+            box-sizing: 50px;
+        }
+    </style>
+<script> // User Validations 
+    function loginValidation() { // Ramesh 
+        var uname = document.myform.username.value; //Ramesh@123 
+        var password = document.myform.password.value; 
+        if(uname==null || uname=="") { 
+            alert("Name cant be blank") 
+            return false; } 
+        else if (password.length<6){ 
+            alert("Password Must be 6 letters") 
+            return false; } 
+            return true } 
+    </script> 
+</head> 
+<body>
+<h1><pre>
+    Already have an account??? 
+    Login here..</pre></h1>
+        <br>
+            <div class="container">
+                <div class="box">
+                    <div class="text">
+                        <form name="myform" action="book.html" onsubmit="return loginValidation(this)"> 
+                            <p> User Name : </p><input type="text" name="username"> <br> 
+                            <p>Password : </p><input type="password" name="password"> <br> 
+                             <br>
+                            <input type="submit" value="Submit"> </form> </body> 
+                    </div>
+                </div>
+    </body>

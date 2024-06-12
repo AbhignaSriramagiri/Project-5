@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <style> 
+        @media screen and (min-width:320px )  {
+
+        body {
+            background-color: aqua;
+        }
+    }   
+
+        @media Screen and (min-width:768px) and (max-width:1024px){
+            body {
+                background-color: rgb(177, 48, 48);
+            }
+        }
+        @media Screen and (min-width:1224px) {
+            body {
+                background-color: rgb(106, 11, 78);
+            }
+        }
+        @media Screen and (min-width:1824px) {
+            body {
+                background-color: rgb(201, 71, 78);
+            }
+        }     
+
+            h1{
+               text-shadow: 5px 5px 10px red;
+               color:beige;
+              }
+              h2{
+               text-shadow: 5px 5px 10px rgb(128, 0, 28);
+               color:beige;
+              }
+            .navbar{
+                padding-top: 0cqb;
+                padding:12px;
+                overflow:visible;
+                background-color:rgb(65, 252, 174);
+                opacity: 0.8;
+            }
+            .navbar a{
+                color: black;
+                text-align:center;
+                padding: 14px 16px;
+                font-size:20px;
+                text-shadow: 5px 5px 10px red;
+            }
+            .navbar a:hover{
+                text-size-adjust: 350px;
+                background-color:black;
+                color:aqua;
+                overflow: visible;
+            }
+            .navbar a:active{
+                background-color: beige;
+                color: white;
+            }
+            p{
+                text-shadow: 2px 3px 6px rgb(82, 201, 71);
+                font-size: 30px;
+                background: #ffffff;
+                color:crimson;
+                opacity:0.7;
+            }
+            marquee{
+                color:wheat;
+            }
+            .box{
+                padding-top: 70px;
+                padding-left: 20px;
+                margin-top: 20px;
+                overflow: visible;
+            }
+            
+            #myVideo {
+                position:absolute;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                z-index: -1;
+            }
+        
+
+/* Add some content at the bottom of the video/page */
+            .content {
+                position:relative;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5);
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+
+/* Style the button used to pause/play the video */
+            #myBtn {
+                width: 200px;
+                font-size: 18px;
+                padding: 10px;
+                border: none;
+                background: #000;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            #myBtn:hover {
+                background: #ddd;
+                color: black;
+            }
+        </style>
+        <script>
+            // Get the video
+            var video = document.getElementById("myVideo");
+            
+            // Get the button
+            var btn = document.getElementById("myBtn");
+            
+            // Pause and play the video, and change the button text
+            function myFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+              } else {
+                video.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+            </script>
+            
+    </head>
+    <body>
+            <video autoplay muted loop id="myVideo">
+                <source src="C:\Users\ZPHS\Desktop\UI_Development_Abhigna\Project\New folder\new web\video.mp4" type="video/mp4">
+            </video>
+              
+              <!-- Optional: some overlay text to describe the video -->
+              
+               
+        <div class="navbar">
+            <a href="aboutus.html">About Us</a>
+            <a href="accomodation.html">Accomodations</a>
+            <a href="services.html">Our Services</a>
+            <a href="activities.html">Activities</a>
+            <a href="events.html">Events</a>
+            <a href="prices.html">Offers and Discounts</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="nowlogin.html">Login</a>
+            <a href="regpagee.html">Sign Up</a>
+        </div>
+        <br>
+              <!-- Optional: some overlay text to describe the video -->
+              
+            <br>
+            <br>
+            <p>Far away from the chaotic world,experience the universe of nature.
+            Dive in to the woods and enjoy your time with yourself or come
+            along with your friends and family to enjoy this peaceful power
+            in our resort.Dwell in to the world of nature and experience the 
+            great surprises it has for you.Your private resort experience is 
+            waiting for you.Shut down your laptops and switch off your mobiles
+            and turn in your brain to the...
+                        <span style="color:black; padding-left: 400px;" >NATURE'S HEAVEN RESORT..</span>
+            </p>
+        </div>
+    </body>
+</html>
